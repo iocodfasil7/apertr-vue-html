@@ -1,0 +1,186 @@
+#photo-gallery p.section-title {
+    padding-left: 10px;
+    margin-bottom: 0px;
+}
+section#category {
+
+    .section-title {
+        padding-left: 10px;
+    }
+    div.category-body {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 25px;
+        .outer {
+            overflow: hidden;
+        }
+        .category-item {
+            padding: 5vw 0px;
+            background-repeat: no-repeat;
+            background-size: cover !important;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-transform: capitalize;
+            cursor: pointer;
+            transition: all 0.3s;
+
+        }
+
+        #category-landscapes {
+            background: url(../assets/categories/browse-category/photos/img_category_landscape.png);
+        }
+
+        #category-architecture {
+            background: url(../assets/categories/browse-category/photos/img_category_architecture.png);
+        }
+
+        #category-people {
+            background: url(../assets/categories/browse-category/photos/img_category_people.png);
+        }
+
+        #category-abstract {
+            background: url(../assets/categories/browse-category/photos/img_category_abstract.png);
+        }
+        #category-animals {
+            background: url(../assets/categories/browse-category/photos/img_category_animals.png);
+        }
+
+        #category-summer {
+            background: url(../assets/categories/browse-category/photos/img_category_summer.png);
+        }
+
+        #category-textures {
+            background: url(../assets/categories/browse-category/photos/img_category_textures.png);
+        }
+
+        #category-sunset {
+            background: url(../assets/categories/browse-category/photos/img_category_sunset.png);
+        }
+
+        #category-city {
+            background: url(../assets/categories/browse-category/photos/img_category_city.png);
+        }
+
+        #category-food {
+            background: url(../assets/categories/browse-category/photos/img_category_food.png);
+        }
+        p {
+            margin-bottom: 0px;
+            font-size: 24px;
+            color: white;
+            font-weight: 500;
+            text-shadow: 1px 3px 2px rgba(0, 0, 0, 0.5);
+        }
+    }
+}
+
+section#category.video-category {
+    padding: 30px;
+    .section-title {
+        padding-left: 10px;
+    }
+    div.category-body {
+        #category-nature {
+            background: url(../assets/categories/browse-category/videos/video-nature.png);
+        }
+
+        #category-travel {
+            background: url(../assets/categories/browse-category/videos/video-travel.png);
+        }
+
+        #category-business {
+            background: url(../assets/categories/browse-category/videos/video-business.png);
+        }
+
+        #category-people {
+            background: url(../assets/categories/browse-category/videos/video-people.png);
+        }
+        #category-motion {
+            background: url(../assets/categories/browse-category/videos/video-motion.png);
+        }
+
+        #category-animation {
+            background: url(../assets/categories/browse-category/videos/video-animation.png);
+        }
+
+        #category-family {
+            background: url(../assets/categories/browse-category/videos/video-family.png);
+        }
+
+        #category-sunsets {
+            background: url(../assets/categories/browse-category/videos/video-sunset.png);
+        }
+
+        #category-abstract {
+            background: url(../assets/categories/browse-category/videos/video-abstract.png);
+        }
+
+        #category-timelapse {
+            background: url(../assets/categories/browse-category/videos/video-time.png);
+        }
+    }
+}
+
+section#popularCategory {
+    padding: 30px;
+    ul {
+        padding-left: 0px;
+        width: fit-content;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        li {
+            padding-right: 100px;
+            a {
+                color: #5291c6;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    section#category {
+        div.category-body {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 10px;
+            .category-item {
+                padding: 0px;
+                height: calc(100px + 4vw);
+                p {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    section#popularCategory {
+        ul {
+            grid-template-columns: repeat(2, 1fr);
+            width: 100%;
+            li {
+                padding-right: 0px;
+            }
+        }
+    }
+}
+
+#photo-gallery.video a.video-link {
+    position: relative;
+    display: inline-block;
+}
+
+#photo-gallery.video a.video-link::before {
+    content: '\f04b';
+    z-index: 5;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate( -50%, -50% );
+    padding: 3px 15px 3px 25px;
+    color: white;
+    font-family: 'FontAwesome';
+    font-size: 32px !important;
+    // background-color: rgba(23, 35, 34, 0.75);
+    border-radius: 5px 5px 5px 5px;
+}

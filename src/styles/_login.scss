@@ -1,0 +1,192 @@
+.login-template {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.login-template .login-modal {
+    max-width: 400px;
+    width: 400px;
+    box-shadow: 0px 4px 20px rgba(0,0,0,0.25);
+}
+
+.login-template  .login-modal .header {
+    display: flex;
+    justify-content: center;
+    padding: 45px 0px 10px 0px;
+    background: #73CCDC;
+}
+
+.login-template .login-modal .header img {
+    width: 50%;
+}
+
+.login-template .login-modal .login-body {
+    padding: 50px 30px;
+    padding-bottom: 30px;
+}
+
+.login-template .login-modal .login-body .title {
+    color: #666;
+    text-align: center;
+    font-size: 18pt;
+}
+
+.login-template .login-modal .login-body > div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.login-template .login-modal .login-body > div.main-body input {
+    border: none;
+    border-bottom: 1px solid #999;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    margin-top: 30px;
+}
+
+.login-template .login-modal .login-body > div.main-body input::placeholder {
+    color: #999;
+    font-weight: 100;
+}
+
+.login-template .login-modal .login-body > div.exception-body {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.login-template .login-modal .login-body > div.exception-body a {
+    color: #5291C6;
+    font-size: 12px;
+    font-weight: 100;
+    margin-bottom: 5px;
+} 
+
+.login-template .separate {
+    width: 100%;
+    margin: 30px 0px;
+}
+
+.login-template .button-group {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.btn-google {
+    background: #DB3236 !important;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 0px;
+    position: relative;
+    font-size: 14px;
+}
+
+.btn-facebook {
+    background: #3B5998 !important;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 0px;
+    position: relative;
+    font-size: 14px;
+}
+
+.btn-facebook i,
+.btn-google i {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+    top: 0px;
+    left: 20px;
+}
+
+@media (max-width: 400px) {
+    .login-template {
+        align-items: flex-start;
+    }
+
+    .login-template .login-modal {
+        box-shadow: none;
+    }
+
+    .login-template .login-modal .login-body {
+        padding: 10px 30px;
+    }
+}
+
+/****Signup **/
+
+.signup-window h4 {
+    margin-top: 20px;
+    color: white;
+}
+
+.signup-window p.title {
+    font-size: 12pt !important;
+}
+
+.input-group {
+    position: relative;
+}
+
+.input-group i {
+    position: absolute;
+    left: 5px;
+    top: 0px;
+    bottom: 5px;
+    display: flex;
+    align-items: center;
+    color: #999;
+}
+
+.login-template .login-modal.signup-window .login-body>div {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.login-template .login-modal.signup-window .login-body > div.main-body>div{
+    display: flex;
+    width: 100%;
+    margin-top: 30px;
+    position: relative;
+} 
+.login-template .login-modal.signup-window .login-body > div.main-body input{
+    padding-left: 30px;
+    width: 100%;
+    margin-top: 0px;
+}
+
+.login-template .login-modal.signup-window .login-body > div.main-body span {
+    font-size: 12px;
+    color: #999;
+    margin-top: 5px;
+}
+
+.login-template .terms-body label {
+    font-size: 14px !important;
+    color: #999 !important;
+}
+
+.login-template .terms-body a {
+    color: #5291C6;
+}
+
+.login-template .signup-window .button-group span {
+    font-size: 14px;
+    text-align: center;
+    color: #999;
+    margin-top: 5px;
+}
+
+.login-template .signup-window .button-group span a {
+    color: #5291C6;
+}
+
+.sign-success a.btn {
+    color: white !important;
+    width: 100%;
+    max-width: 450px;
+}
